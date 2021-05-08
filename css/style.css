@@ -96,3 +96,26 @@ p{
         column-gap: 2rem;
     }
 }
+
+/*Portafolio*/
+.elemento{
+    border-bottom: 1px solid #5b5b5b;
+    margin-bottom: 3rem;
+}
+
+@media screen and (min-width:768px) {
+    .listado{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        grid-auto-rows: max-content;
+    }
+
+    .elemento{
+        border: none;
+    }
+
+    .elemento:nth-child(3){
+        grid-row: span 2;
+    }
+}
